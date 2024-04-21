@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheme Details</title>
+<style>
+/* Add CSS styles for the popup here */
+</style>
+</head>
+<body>
+
+<h2 id="schemeName">Scheme Name</h2>
+<p id="schemeDescription">Scheme Description</p>
+
+<script>
+// Retrieve the scheme name from the URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const schemeName = urlParams.get('scheme');
+
+// Display the scheme name and description
+document.getElementById("schemeName").textContent = schemeName;
+// You can retrieve additional information about the scheme and display it here
+</script>
+
+</body>
+</html>
